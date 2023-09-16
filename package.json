@@ -1,0 +1,57 @@
+{
+  "name": "conejos-mensajeros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "uploader" ,
+    "processor"
+  ],
+  "scripts": {
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "prettier:cli": "npm run prettier:cli --workspaces --if-present",
+    "prettier:check": "npm run prettier:check --workspaces --if-present",
+    "prettier:fix": "npm run prettier:fix --workspaces --if-present",
+    "eslint:fix": "npm run eslint:fix --workspaces --if-present",
+    "eslint": "npm run  eslint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:coverage":" npm run test:coverage --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "rebuild": "npm run rebuild --workspaces --if-present",
+    "docker:build": "docker build -t conejos-mensajeros .",
+    "docker:run": "docker run -p 3000:3000 -d conejos-mensajeros",
+    "start": "npm run start --workspaces --if-present",
+    "start:clean": "npm run rebuild && npm run start",
+    "mdlint": "markdownlint \"**/*.md\" --ignore node_modules",
+    "mdlint:fix": "npm run mdlint --fix",
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@commitlint/cz-commitlint": "^17.5.0",
+    "@types/node": "^20.4.0",
+    "conventional-changelog-atom": "^3.0.0",
+    "husky": "^8.0.0",
+    "markdownlint": "^0.29.0",
+    "markdownlint-cli": "^0.35.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "lint-staged": "^13.2.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@commitlint/cz-commitlint"
+    }
+  },
+  "dependencies": {},
+  "packageManager": "pnpm@8.6.6"
+}

@@ -1,0 +1,7 @@
+packages:
+  - "frontend"
+  - "uploader"
+  - "processor"
+  - "libs/**"
+  - "!**/test/**"
+  - "!deploy/**"
