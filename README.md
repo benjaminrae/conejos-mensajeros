@@ -1,7 +1,6 @@
 # Conejos Mensajeros - Intro to RabbitMQ
 
-![Commitlint](https://github.com/benjaminrae/node-ts-jest-starter/actions/workflows/commitlint.yml/badge.svg
-) ![Tests](https://github.com/benjaminrae/node-ts-jest-starter/actions/workflows/test.yml/badge.svg) ![Build](https://github.com/benjaminrae/node-ts-jest-starter/actions/workflows/build.yml/badge.svg) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+![Commitlint](https://github.com/benjaminrae/node-ts-jest-starter/actions/workflows/commitlint.yml/badge.svg) ![Tests](https://github.com/benjaminrae/node-ts-jest-starter/actions/workflows/test.yml/badge.svg) ![Build](https://github.com/benjaminrae/node-ts-jest-starter/actions/workflows/build.yml/badge.svg) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Write a brief description of your project and what it aims to achieve.
 
@@ -108,7 +107,7 @@ This template includes linting tools to maintain code quality and consistency:
 
 - **ESLint**: Lints **JavaScript** and **TypeScript** files.
 - **Prettier**: Enforces code formatting rules.
-- **Markdownlint**: Checks Markdown (*.md`) files for linting errors.
+- **Markdownlint**: Checks Markdown (\*.md`) files for linting errors.
 
 Feel free to customize the linting rules or configurations in `.eslintrc.cjs`, `.editorconfig`, `.prettierrc.json` and `.markdownlint.json` as per your project requirements.
 
@@ -161,8 +160,7 @@ The template uses **Commitizen** to enforce a consistent commit message format. 
 
 Ensure that you follow the commit guidelines and maintain a clean commit history.
 
-See: [Commitizen](
-  <https://commitizen-tools.github.io/commitizen/>) | [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) | [Commitlint](https://commitlint.js.org/#/)
+See: [Commitizen](https://commitizen-tools.github.io/commitizen/) | [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) | [Commitlint](https://commitlint.js.org/#/)
 
 ## Package Manager
 
