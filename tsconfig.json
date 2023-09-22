@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": false,
+    "incremental": true,
+    "lib": ["es2020"],
+    "module": "ES6",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "sourceMap": true,
+    "declaration": true,
+    "importHelpers": true
+  }
+}

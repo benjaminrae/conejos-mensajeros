@@ -1,4 +1,4 @@
 {
-  "*.{md,json,ts,tsx,js}": "npm run prettier:check",
-  "*.{ts,tsx,js}": "npm run eslint"
+  "*.{md,json,ts,tsx,js}": "prettier",
+  "*.{ts,tsx,js}": "eslint --max-warnings=0"
 }
