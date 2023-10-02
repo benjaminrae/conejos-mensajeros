@@ -1,0 +1,9 @@
+<form [formGroup]="uploadForm" (ngSubmit)="submitForm()">
+  <div class="form-group">
+    <label for="file">File</label>
+    <input id="file" class="form__input form__input--file" type="file" formControlName="file" required
+      (change)="onFileChange($event)" [disabled]="uploadForm.status === 'INVALID'">
+  </div>
+
+  <app-button [big]="true" text="Upload"></app-button>
+</form>

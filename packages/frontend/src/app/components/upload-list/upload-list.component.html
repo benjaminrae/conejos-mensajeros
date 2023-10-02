@@ -1,0 +1,15 @@
+<main class="upload-list">
+
+  <ul>
+
+    <li *ngFor="let upload of uploads$ | async">
+
+      <app-upload [upload]="upload">
+
+      </app-upload>
+
+    </li>
+
+  </ul>
+
+</main>

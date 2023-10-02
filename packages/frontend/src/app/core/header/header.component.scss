@@ -1,0 +1,11 @@
+@use "../../../styles/variables/sizes";
+
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+
+  &__title {
+    flex: 1;
+  }
+}

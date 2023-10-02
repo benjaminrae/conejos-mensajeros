@@ -1,0 +1,21 @@
+<article class="upload">
+  <div *ngIf="upload.mimetype.startsWith('image') && upload.status === 'FINISHED'; then thenBlock else elseBlock"></div>
+
+  <ng-template #thenBlock>
+    <img src={{upload.url}} alt={{upload.filename}} class="upload__image" width="312" height="172">
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <span class="upload__alt">
+      <span class="upload__icon">
+        {{ fileIcon(upload.mimetype) }}
+      </span>
+      <span class="upload__status"> Status:
+        {{ upload.status }}
+      </span>
+    </span>
+  </ng-template>
+
+  <h3 class="upload__title">{{ upload.filename }}</h3>
+  <app-button text="Download" [disabled]="upload.status !== 'FINISHED'" (onClick)="onDownloadClick()"></app-button>
+</article>

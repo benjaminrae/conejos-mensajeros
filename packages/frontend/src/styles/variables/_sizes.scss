@@ -1,0 +1,24 @@
+@use "../functions/calculatePxInRem";
+
+$buttonPadding: 8px 16px;
+$inputPadding: 16px 16px;
+
+$checkboxHeight: calculatePxInRem.calculatePxInRem(20);
+$checkboxWidth: calculatePxInRem.calculatePxInRem(20);
+
+$filterGap: calculatePxInRem.calculatePxInRem(25);
+
+$bodyPaddingMobile: 0 24px;
+$bodyMaxWidth: 1200px;
+
+$formGap: calculatePxInRem.calculatePxInRem(15);
+
+$navigationGap: calculatePxInRem.calculatePxInRem(32);
+
+$cardListGap: calculatePxInRem.calculatePxInRem(44);
+
+$borderRadius: 8px;
+
+$cardTitleVerticalPadding: 5px;
+
+$cardGap: 10px;

@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "type": "module",
   "workspaces": [
-    "frontend",
-    "uploader",
-    "processor",
-    "libs/ddd"
+    "packages/ddd",
+    "packages/frontend",
+    "packages/uploader",
+    "packages/processor"
   ],
   "scripts": {
     "lint": "npm run lint --workspaces --if-present",

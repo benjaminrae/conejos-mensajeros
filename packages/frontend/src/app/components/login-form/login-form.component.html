@@ -1,0 +1,20 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" data-testid="form">
+  <h2>Log in to Conejos Mensajeros</h2>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" type="text" formControlName="email" required autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input id="password" type="password" formControlName="password" required autocomplete="off">
+  </div>
+
+  <app-button text="Login" [big]="true" [disabled]="loginForm.status === 'INVALID'"></app-button>
+
+  <span>Don't have an account?
+    <a routerLink="/register">Register here</a>
+  </span>
+
+</form>
